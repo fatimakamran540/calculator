@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text"  id="display" readonly placeholder="0">
+        <div class="check">
+        <button class="btn" onclick="cV = ''; document.querySelector('#display').value = cV;">C</button> 
+        <button class="btn" onclick="cV += '1'; document.querySelector('#display').value = cV;">1</button> 
+        <button class="btn" onclick="cV += '2'; document.querySelector('#display').value = cV;">2</button> 
+        <button class="btn" onclick="cV += '3'; document.querySelector('#display').value = cV;">3</button> 
+        <button class="btn" onclick="cV += '+'; document.querySelector('#display').value = cV;">+</button> 
+        <button class="btn" onclick="cV += '4'; document.querySelector('#display').value = cV;">4</button> 
+        <button class="btn" onclick="cV +='5'; document.querySelector('#display').value = cV;">5</button> 
+        <button class="btn" onclick="cV += '6'; document.querySelector('#display').value = cV;">6</button> 
+        <button class="btn" onclick="cV += '-'; document.querySelector('#display').value = cV;">-</button> 
+        <button class="btn" onclick="cV += '7'; document.querySelector('#display').value = cV;">7</button> 
+        <button class="btn" onclick="cV += '8'; document.querySelector('#display').value = cV;">8</button> 
+        <button class="btn" onclick="cV += '9'; document.querySelector('#display').value = cV;">9</button>
+        <button class="btn" onclick="cV += '*'; document.querySelector('#display').value = cV;">*</button> 
+        <button class="btn" onclick="cV += '/'; document.querySelector('#display').value = cV;">/</button> 
+        <button class="btn" onclick="cV += '.'; document.querySelector('#display').value = cV;">.</button>  
+        <button class="btn"onclick="cV += '0'; document.querySelector('#display').value = cV;">0</button>
+        <button class="btn" onclick= "cV = eval(cV); document.querySelector('#display').value = cV;">=</button>  
+        </div>
+     </div>
+    <script src="app.js"></script>
+</body>
+</html>
